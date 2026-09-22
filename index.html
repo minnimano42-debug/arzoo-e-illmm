@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arzoo-e-Ilm</title>
+    <meta name="description" content="Arzoo-e-Ilm — Punjab Board study companion for students." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="auth-screen" class="auth-screen">
+      <div class="auth-card">
+        <div class="brand-row">
+          <div class="brand-mark">A</div>
+          <div>
+            <p class="tiny-label">Punjab Board</p>
+            <h1>Arzoo-e-Ilm</h1>
+          </div>
+        </div>
+
+        <p class="auth-copy">
+          Study partner for children — reading, meaning, exercise, question answers, and revision.
+        </p>
+
+        <label for="password">Website password</label>
+        <input id="password" type="password" placeholder="Password likhein" autocomplete="off" />
+        <button id="unlock-btn" class="primary-btn">Website kholen</button>
+        <small id="error-msg" aria-live="polite"></small>
+      </div>
+    </div>
+
+    <div id="app" class="hidden">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark small">A</div>
+          <div>
+            <p class="tiny-label">Study Companion</p>
+            <strong>Arzoo-e-Ilm</strong>
+          </div>
+        </div>
+        <button id="logout-btn" class="ghost-btn">Lock</button>
+      </header>
+
+      <main class="container">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="tiny-label">Punjab Board</p>
+            <h2>Har bachay ki ilm ki arzoo.</h2>
+            <p>
+              Chapter ko samjhao, difficult words ka Urdu meaning batao, exercise solve karwao,
+              question answers yaad karwao, aur revision quiz do.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn" data-target="learning">Shuru karein</button>
+              <button class="secondary-btn" data-target="progress">Progress dekhein</button>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div class="mini-box"><span>Today</span><strong>2 chapters</strong></div>
+            <div class="mini-box"><span>Streak</span><strong>12 days</strong></div>
+            <div class="mini-box"><span>Confidence</span><strong>87%</strong></div>
+          </div>
+        </section>
+
+        <section id="learning" class="panel">
+          <div class="section-header">
+            <h3>Class select karein</h3>
+          </div>
+          <div id="classList" class="chip-list"></div>
+
+          <div class="section-header extra-space">
+            <h3>Subject select karein</h3>
+          </div>
+          <div id="subjectList" class="chip-list"></div>
+
+          <div class="section-header extra-space">
+            <h3>Chapters</h3>
+          </div>
+          <div id="chapterList" class="chapter-grid"></div>
+        </section>
+
+        <section id="progress" class="panel">
+          <div class="section-header">
+            <h3>Progress overview</h3>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span>Exercises</span>
+              <strong>34</strong>
+            </div>
+            <div class="stat-box">
+              <span>Q/A</span>
+              <strong>18</strong>
+            </div>
+            <div class="stat-box">
+              <span>Quizzes</span>
+              <strong>09</strong>
+            </div>
+            <div class="stat-box">
+              <span>Revision</span>
+              <strong>6 topics</strong>
+            </div>
+          </div>
+
+          <div class="progress-card">
+            <div class="progress-row">
+              <span>English</span>
+              <div class="bar"><i style="width:87%"></i></div>
+            </div>
+            <div class="progress-row">
+              <span>Urdu</span>
+              <div class="bar"><i style="width:82%"></i></div>
+            </div>
+            <div class="progress-row">
+              <span>Maths</span>
+              <div class="bar"><i style="width:91%"></i></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
